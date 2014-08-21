@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 ######################################################################
-# Tonteria, convierte texto plano a texto escapado, valido para URIs.
+# Tonteria, codifica y decodifica URLs (traduce %20 por " " y esa gilada).
 ######################################################################
 
 use URI::Escape;
@@ -19,7 +19,7 @@ Script para codificar y decodificar URIS. Gran huevada.
 
 
 my %opts = ();
-getopts('oe:d:',\%opts);
+getopts('e:d:',\%opts);
 
 =pod
 
